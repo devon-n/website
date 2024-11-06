@@ -8,6 +8,7 @@ import { PrimaryButton } from '../../buttons/PrimaryButton'
 import { GhostButton } from '../../buttons/GhostButton'
 import Container from '../../container'
 import Image from 'next/image'
+import { TransakWidget } from '../../TransakWidget'
 
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
 
@@ -40,6 +41,7 @@ export const Main = () => {
 
           <div className='relative flex flex-col md:flex-row md:items-center justify-center gap-[24px] md:gap-6 mt-[80px] mb-[104px] md:my-14 w-ful'>
             <Fade triggerOnce delay={600}>
+              <TransakWidget/>
               <PrimaryButton
                 className='w-full'
                 text='Start building'
